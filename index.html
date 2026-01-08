@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Tools - Your All-in-One PDF Solution</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="PDF Experts Logo">
+                </div>
+                <h1><span class="brand-name">Docify</span></h1>
+            </div>
+
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="#new" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>New Tools</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+
+                <div class="user-profile">
+                    <button class="profile-btn">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Sign In</span>
+                    </button>
+                    <div class="profile-dropdown">
+                        <div class="profile-header">
+                            <i class="fas fa-user-circle"></i>
+                            <div class="profile-info">
+                                <span class="user-name">Guest User</span>
+                                <span class="user-email">Sign in to access your account</span>
+                            </div>
+                        </div>
+                        <div class="profile-actions">
+                            <div class="social-login-options">
+                                <button class="social-btn google">
+                                    <i class="fab fa-google"></i>
+                                    Sign in with Google
+                                </button>
+                                <button class="social-btn twitter">
+                                    <i class="fab fa-twitter"></i>
+                                    Sign in with Twitter
+                                </button>
+                                <button class="social-btn linkedin">
+                                    <i class="fab fa-linkedin-in"></i>
+                                    Sign in with LinkedIn
+                                </button>
+                                <button class="social-btn github">
+                                    <i class="fab fa-github"></i>
+                                    Sign in with GitHub
+                                </button>
+                                <button class="social-btn facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                    Sign in with Facebook
+                                </button>
+                                <button class="social-btn apple">
+                                    <i class="fab fa-apple"></i>
+                                    Sign in with Apple
+                                </button>
+                            </div>
+                            <div class="divider">
+                                <span>or</span>
+                            </div>
+                            <button class="email-signin-btn">
+                                <i class="fas fa-envelope"></i>
+                                Sign in with Email
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Your All-in-One PDF Solution</h1>
+            <p>Transform, edit, and manage your PDF files with ease</p>
+            <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-bolt"></i>
+                    <span>Fast Processing</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Secure</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-magic"></i>
+                    <span>Easy to Use</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="tools-grid" id="tools">
+            <div class="tool-card" data-tool="merge">
+                <i class="fas fa-object-group"></i>
+                <h3>Merge PDF</h3>
+                <p>Combine PDFs in the order you want</p>
+            </div>
+            <div class="tool-card" data-tool="split">
+                <i class="fas fa-cut"></i>
+                <h3>Split PDF</h3>
+                <p>Separate pages into independent PDF files</p>
+            </div>
+            <div class="tool-card" data-tool="compress">
+                <i class="fas fa-compress-alt"></i>
+                <h3>Compress PDF</h3>
+                <p>Reduce file size while maintaining quality</p>
+            </div>
+            <div class="tool-card" data-tool="pdf-to-word">
+                <i class="fas fa-file-word"></i>
+                <h3>PDF to Word</h3>
+                <p>Convert PDF to editable DOC/DOCX</p>
+            </div>
+            <div class="tool-card" data-tool="pdf-to-ppt">
+                <i class="fas fa-file-powerpoint"></i>
+                <h3>PDF to PowerPoint</h3>
+                <p>Convert PDF to PPT/PPTX</p>
+            </div>
+            <div class="tool-card" data-tool="pdf-to-excel">
+                <i class="fas fa-file-excel"></i>
+                <h3>PDF to Excel</h3>
+                <p>Extract data to Excel spreadsheets</p>
+            </div>
+            <div class="tool-card" data-tool="word-to-pdf">
+                <i class="fas fa-file-pdf"></i>
+                <h3>Word to PDF</h3>
+                <p>Convert DOC/DOCX to PDF</p>
+            </div>
+            <div class="tool-card" data-tool="edit">
+                <i class="fas fa-edit"></i>
+                <h3>Edit PDF</h3>
+                <p>Add text, images, and annotations</p>
+            </div>
+            <div class="tool-card" data-tool="sign">
+                <i class="fas fa-signature"></i>
+                <h3>Sign PDF</h3>
+                <p>Add electronic signatures</p>
+            </div>
+        </section>
+
+        <section class="tools-grid" id="more-tools">
+            <h2 class="section-title">More PDF Tools</h2>
+            <div class="tool-card" data-tool="watermark">
+                <i class="fas fa-stamp"></i>
+                <h3>Watermark</h3>
+                <p>Add text or image watermarks</p>
+            </div>
+            <div class="tool-card" data-tool="rotate">
+                <i class="fas fa-redo"></i>
+                <h3>Rotate PDF</h3>
+                <p>Rotate PDF pages as needed</p>
+            </div>
+            <div class="tool-card" data-tool="protect">
+                <i class="fas fa-lock"></i>
+                <h3>Protect PDF</h3>
+                <p>Add password protection</p>
+            </div>
+        </section>
+
+        <section class="about-section" id="about-section">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to your ultimate destination for everything PDF. Whether you're a student, professional,
+                        or just someone who frequently works with digital documents, our platform is designed to make
+                        your life easier.</p>
+                    <p>We offer a comprehensive suite of tools that allow you to transform, edit, convert, merge, split,
+                        compress, and manage PDF files effortlessly—all in one place. Say goodbye to complicated
+                        software and hello to a streamlined, user-friendly experience that gets the job done in seconds.
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3><i class="fas fa-rocket"></i> Fast Processing</h3>
+                        <p>Our advanced technology ensures your PDF tasks are completed quickly, so you can focus on
+                            what truly matters.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-shield-alt"></i> Secure & Private</h3>
+                        <p>Your files are handled with the utmost care. We use robust encryption and automatically
+                            delete documents after processing to protect your data.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-check-circle"></i> Easy to Use</h3>
+                        <p>No downloads. No installations. Just upload your file, make your changes, and download. It's
+                            that simple.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3><i class="fas fa-globe"></i> Accessible Anywhere</h3>
+                        <p>Access our tools from any device with an internet connection. Whether you're at work, home,
+                            or on the go—your PDF solutions are always just a click away.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact-section">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-info-container">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>support@yuvitools.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+91 9906161739</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Tech Street, Jammu City</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="tool-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modal-title"></h2>
+                <div class="upload-area">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Drag and drop your files here or click to browse</p>
+                    <input type="file" id="file-input" multiple accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx">
+                </div>
+                <div id="file-list"></div>
+                <button id="process-btn" class="process-button">Process Files</button>
+            </div>
+        </div>
+
+        <!-- Login Modal -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content auth-modal">
+                <span class="close">&times;</span>
+                <h2>Welcome Back</h2>
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <div class="form-group remember-forgot">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="auth-submit-btn">Sign In</button>
+                </form>
+                <div class="auth-divider">
+                    <span>Or continue with</span>
+                </div>
+                <div class="social-login">
+                    <button class="social-btn google">
+                        <i class="fab fa-google"></i>
+                        Continue with Google
+                    </button>
+                    <button class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        Continue with Facebook
+                    </button>
+                    <button class="social-btn twitter">
+                        <i class="fab fa-twitter"></i>
+                        Continue with Twitter
+                    </button>
+                    <button class="social-btn github">
+                        <i class="fab fa-github"></i>
+                        Continue with GitHub
+                    </button>
+                    <button class="social-btn linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        Continue with LinkedIn
+                    </button>
+                    <button class="social-btn apple">
+                        <i class="fab fa-apple"></i>
+                        Continue with Apple
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Signup Modal -->
+        <div id="signupModal" class="modal">
+            <div class="modal-content auth-modal">
+                <span class="close">&times;</span>
+                <h2>Create Account</h2>
+                <form id="signupForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="signupName">Full Name</label>
+                        <input type="text" id="signupName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email</label>
+                        <input type="email" id="signupEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" required>
+                            I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="auth-submit-btn">Create Account</button>
+                </form>
+                <div class="auth-divider">
+                    <span>Or sign up with</span>
+                </div>
+                <div class="social-login">
+                    <button class="social-btn google">
+                        <i class="fab fa-google"></i>
+                        Sign up with Google
+                    </button>
+                    <button class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        Sign up with Facebook
+                    </button>
+                    <button class="social-btn twitter">
+                        <i class="fab fa-twitter"></i>
+                        Sign up with Twitter
+                    </button>
+                    <button class="social-btn github">
+                        <i class="fab fa-github"></i>
+                        Sign up with GitHub
+                    </button>
+                    <button class="social-btn linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        Sign up with LinkedIn
+                    </button>
+                    <button class="social-btn apple">
+                        <i class="fab fa-apple"></i>
+                        Sign up with Apple
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-waves">
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-section brand">
+                <div class="footer-logo">
+                    <i class="fas fa-file-pdf"></i>
+                    <h2>PDF Experts</h2>
+                </div>
+                <p>Your all-in-one solution for PDF management. Transform, edit, and manage your documents with ease.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section tools">
+                <h3>Our Tools</h3>
+                <ul>
+                    <li><a href="#merge">Merge PDF</a></li>
+                    <li><a href="#split">Split PDF</a></li>
+                    <li><a href="#compress">Compress PDF</a></li>
+                    <li><a href="#convert">Convert PDF</a></li>
+                    <li><a href="#edit">Edit PDF</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> support@yuviexpert.com</p>
+                    <p><i class="fas fa-phone"></i> +91 9906161739</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Jammu City</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-content">
+                <p>&copy; 2025 PDF Experts. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                    <a href="#cookies">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+

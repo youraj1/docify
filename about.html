@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - PDF Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .about-container {
+            max-width: 1200px;
+            margin: 100px auto;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .about-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .about-content {
+            display: grid;
+            gap: 3rem;
+        }
+
+        .about-section {
+            margin-bottom: 2rem;
+        }
+
+        .about-section h2 {
+            color: var(--primary-dark);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .about-section p {
+            color: var(--text-color);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        .capabilities-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .capability-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            background: rgba(37, 99, 235, 0.05);
+            border-radius: 8px;
+        }
+
+        .capability-item i {
+            color: var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                margin: 80px 1rem;
+                padding: 1.5rem;
+            }
+
+            .about-header h1 {
+                font-size: 2rem;
+            }
+
+            .about-section h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="logo.png" alt="PDF Experts Logo">
+                
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="about.html" class="nav-link active">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="#new" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>New</span>
+                </a>
+                <a href="#news" class="nav-link">
+                    <i class="fas fa-newspaper"></i>
+                    <span>News</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+                <div class="nav-dropdown">
+                    <a href="#more" class="nav-link">
+                        <i class="fas fa-ellipsis-h"></i>
+                        <span>More</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#features" class="dropdown-item">
+                            <i class="fas fa-list"></i>
+                            <span>Features</span>
+                        </a>
+                        <a href="#pricing" class="dropdown-item">
+                            <i class="fas fa-tag"></i>
+                            <span>Pricing</span>
+                        </a>
+                        <a href="#support" class="dropdown-item">
+                            <i class="fas fa-headset"></i>
+                            <span>Support</span>
+                        </a>
+                        <a href="#blog" class="dropdown-item">
+                            <i class="fas fa-blog"></i>
+                            <span>Blog</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="user-profile">
+                <button class="profile-btn">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Sign In</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about-container">
+            <div class="about-header">
+                <h1>Your All-in-One PDF Solution</h1>
+            </div>
+
+            <div class="about-content">
+                <div class="about-section">
+                    <p>Welcome to your ultimate destination for everything PDF. Whether you're a student, professional, or just someone who frequently works with digital documents, our platform is designed to make your life easier.</p>
+                    <p>We offer a comprehensive suite of tools that allow you to transform, edit, convert, merge, split, compress, and manage PDF files effortlessly—all in one place. Say goodbye to complicated software and hello to a streamlined, user-friendly experience that gets the job done in seconds.</p>
+                </div>
+
+                <div class="about-section">
+                    <h2>Why Choose Us?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h3><i class="fas fa-rocket"></i> Fast Processing</h3>
+                            <p>Our advanced technology ensures your PDF tasks are completed quickly, so you can focus on what truly matters.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3><i class="fas fa-shield-alt"></i> Secure & Private</h3>
+                            <p>Your files are handled with the utmost care. We use robust encryption and automatically delete documents after processing to protect your data.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3><i class="fas fa-check-circle"></i> Easy to Use</h3>
+                            <p>No downloads. No installations. Just upload your file, make your changes, and download. It's that simple.</p>
+                        </div>
+                        <div class="feature-card">
+                            <h3><i class="fas fa-globe"></i> Accessible Anywhere</h3>
+                            <p>Access our tools from any device with an internet connection. Whether you're at work, home, or on the go—your PDF solutions are always just a click away.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <h2>What Can You Do Here?</h2>
+                    <div class="capabilities-list">
+                        <div class="capability-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>Convert PDFs to Word, Excel, PowerPoint, and images</span>
+                        </div>
+                        <div class="capability-item">
+                            <i class="fas fa-object-group"></i>
+                            <span>Merge multiple PDFs into one</span>
+                        </div>
+                        <div class="capability-item">
+                            <i class="fas fa-cut"></i>
+                            <span>Split a large PDF into smaller parts</span>
+                        </div>
+                        <div class="capability-item">
+                            <i class="fas fa-compress-alt"></i>
+                            <span>Compress PDFs without losing quality</span>
+                        </div>
+                        <div class="capability-item">
+                            <i class="fas fa-edit"></i>
+                            <span>Add or remove text, images, or pages</span>
+                        </div>
+                        <div class="capability-item">
+                            <i class="fas fa-lock"></i>
+                            <span>Protect PDFs with passwords or unlock secured files</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-section">
+                    <p>Experience the ease of smart document handling—fast, secure, and stress-free.</p>
+                    <p>Let us take care of the PDFs, so you can take care of everything else.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
+
+
+
